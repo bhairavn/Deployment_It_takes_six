@@ -360,7 +360,7 @@
             const level = heatmapDropdown.querySelector('select').value;
             const levelData = deathData[level];
             if (!levelData) document.getElementById('death-heatmap').innerHTML = '';
-            if (levelData.length === 0) return;
+            //if (levelData.length === 0) return;
             console.log('Death Heatmap')
             drawHeatmap(levelData, 'death-heatmap', "Level Maps/" + level + ".png");        
         }
